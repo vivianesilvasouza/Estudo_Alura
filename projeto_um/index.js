@@ -16,12 +16,14 @@ contaCorrenteViviane.cliente = cliente1
 contaCorrenteViviane.depositar(500)
 
 const conta2 = new contaCorreten()
-conta2.cliente = cliente2
+conta2.cliente = cliente1
 conta2.agencia = 102
 
 
-contaCorrenteViviane.transferir(200, conta2)
-console.log(conta2)
+let valor = 200;
+conta2.transferir(200, conta2);
+
+console.log(conta2.cliente);
 
 
 
