@@ -11,18 +11,18 @@ cliente2.cpf = 1111222444;
 
 
 const contaCorrenteViviane = new contaCorreten()
-contaCorrenteViviane.saldo = 0
 contaCorrenteViviane.agencia = 1001
+contaCorrenteViviane.cliente = cliente1
+contaCorrenteViviane.depositar(500)
 
-console.log(contaCorrenteViviane.saldo)
-contaCorrenteViviane.depositar(100)
-contaCorrenteViviane.depositar(200)
-contaCorrenteViviane.depositar(-1)
-console.log(contaCorrenteViviane.saldo)
+const conta2 = new contaCorreten()
+conta2.cliente = cliente2
+conta2.agencia = 102
 
-const valorSacado = contaCorrenteViviane.sacar(50)
-console.log(valorSacado)
 
-console.log(contaCorrenteViviane)
+contaCorrenteViviane.transferir(200, conta2)
+console.log(conta2)
+
+
 
 
