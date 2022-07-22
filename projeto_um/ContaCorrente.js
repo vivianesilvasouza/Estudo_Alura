@@ -8,7 +8,6 @@ export class contaCorreten {
         if (novoValor instanceof cliente) {
             this._cliente = novoValor;
         }
-
     }
 
     get cliente() {
@@ -17,7 +16,11 @@ export class contaCorreten {
 
     get saldo() {
         return this._saldo
+    }
 
+    constructor(cliente, agencia) {
+        this.agencia = agencia
+        this.cliente = cliente
     }
 
     sacar(valor) {
