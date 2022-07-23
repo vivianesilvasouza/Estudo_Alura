@@ -1,0 +1,12 @@
+:root {
+    --cor-de-fundo: #e9e7e7
+        /*  ele é a raiz  */
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
+
+h1 {
+    background-color: white;
+}
